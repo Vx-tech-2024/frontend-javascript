@@ -40,6 +40,8 @@ function isDirector(employee: Director | Teacher): employee is Director {
   return (employee as Director).workDirectorTasks !== undefined;
 }
 
+export function isDirector;
+
 // ✅ Function to execute appropriate work
 function executeWork(employee: Director | Teacher): string {
   if (isDirector(employee)) {
